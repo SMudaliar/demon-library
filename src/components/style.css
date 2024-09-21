@@ -1,0 +1,52 @@
+.scroll {
+    height: 76vh;
+    /* Set a fixed height */
+    overflow-y: auto;
+    /* Make the content scrollable */
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+
+.header{
+    width: 100%;
+    padding: 4vh, 10%;
+    margin-bottom: 10px;
+    background: rgb(248, 144, 16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.header1{
+
+    padding: 4vh;
+    
+    background: rgb(248, 144, 16);
+    
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
